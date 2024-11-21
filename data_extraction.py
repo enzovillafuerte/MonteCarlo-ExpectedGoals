@@ -63,12 +63,5 @@ for matches in matches_list:
 # Save the dataframe into a  csv
 matches_df.to_csv('WC_Group_C_2018.csv', index=False)
 
-# To-do Next: Automate extraction for other matches using dictionary and concatenate all into a consolidated dataset
 
-# Only then start coding in R
-#       - Probabilities of each team winning
-#       - xG Flowchart + Probability visualization
-#       - 3 points for the team that deserved to win
-#       - Expected Points Model to see if we should have passed
-# Peru vs Denmark: 7532
 # To run: python data_extraction.py

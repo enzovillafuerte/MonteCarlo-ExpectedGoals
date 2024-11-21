@@ -4,6 +4,15 @@
 # https://github.com/sonofacorner/matplotlib-tutorials/blob/main/intro_monte_carlo/main_notebook.ipynb
 # setwd('Documents/Github/MonteCarlo-ExpectedGoals')
 
+# To-do Next: Automate extraction for other matches using dictionary and concatenate all into a consolidated dataset
+
+# Only then start coding in R
+#       - Probabilities of each team winning
+#       - xG Flowchart + Probability visualization
+#       - 3 points for the team that deserved to win
+#       - Expected Points Model to see if we should have passed
+# Peru vs Denmark: 7532
+
 
 # Import libraries
 library(readr)
