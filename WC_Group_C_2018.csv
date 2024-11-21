@@ -1,0 +1,129 @@
+match_id,location,minute,player,position,possession_team,shot_statsbomb_xg,shot_outcome,team,timestamp,type
+7530,"[114.0, 56.0]",1,Kylian Mbappé Lottin,Right Wing,France,0.011586021,Saved,France,00:01:31.769,Shot
+7530,"[94.0, 28.0]",4,Paul Pogba,Left Center Midfield,France,0.050655685,Saved,France,00:04:11.956,Shot
+7530,"[95.0, 43.0]",5,Antoine Griezmann,Center Forward,France,0.054453943,Saved,France,00:05:37.596,Shot
+7530,"[109.0, 31.0]",7,Antoine Griezmann,Center Forward,France,0.33887884,Blocked,France,00:07:47.716,Shot
+7530,"[110.0, 34.0]",11,Mathew Leckie,Right Midfield,Australia,0.06711661,Off T,Australia,00:11:50.476,Shot
+7530,"[105.0, 32.0]",16,Mathew Leckie,Right Midfield,Australia,0.072877616,Saved,Australia,00:16:43.156,Shot
+7530,"[109.0, 26.0]",32,Lucas Hernández Pi,Left Back,France,0.064092785,Blocked,France,00:32:34.489,Shot
+7530,"[101.0, 21.0]",44,Aziz Eraltay Behich,Left Back,Australia,0.012084869,Off T,Australia,00:44:52.396,Shot
+7530,"[108.0, 40.0]",57,Antoine Griezmann,Center Forward,France,0.7835,Goal,France,00:12:09.720,Shot
+7530,"[104.0, 37.0]",58,Antoine Griezmann,Center Forward,France,0.09026888,Blocked,France,00:13:24.920,Shot
+7530,"[104.0, 43.0]",58,Antoine Griezmann,Center Forward,France,0.06915687,Off T,France,00:13:26.920,Shot
+7530,"[109.0, 41.0]",61,Mile Jedinak,Right Center Midfield,Australia,0.7835,Goal,Australia,00:16:16.680,Shot
+7530,"[86.0, 30.0]",68,Samuel Yves Umtiti,Left Center Back,France,0.007040045,Blocked,France,00:23:26.640,Shot
+7530,"[95.0, 42.0]",71,Benjamin Pavard,Right Back,France,0.030792372,Off T,France,00:26:56.600,Shot
+7530,"[100.0, 31.0]",83,Lucas Hernández Pi,Left Back,France,0.05179903,Off T,France,00:38:31.800,Shot
+7530,"[100.0, 63.0]",87,Nabil Fekir,Left Wing,France,0.009332593,Blocked,France,00:42:30.600,Shot
+7530,"[97.0, 47.0]",93,Josh Risdon,Right Back,Australia,0.044451967,Blocked,Australia,00:48:56.640,Shot
+7532,"[87.0, 57.0]",4,Luis Jan Piers Advíncula Castrillón,Right Back,Peru,0.0069104647,Off T,Peru,00:04:52.880,Shot
+7532,"[84.0, 24.0]",7,Víctor Yoshimar Yotún Flores,Left Center Midfield,Peru,0.005467236,Saved,Peru,00:07:11.200,Shot
+7532,"[87.0, 41.0]",10,Édison Michael Flores Peralta,Left Wing,Peru,0.022084096,Off T,Peru,00:10:49.880,Shot
+7532,"[103.0, 58.0]",12,André Martín Carrillo Díaz,Right Wing,Peru,0.02998372,Saved,Peru,00:12:06.040,Shot
+7532,"[86.0, 43.0]",13,Renato Fabrizio Tapia Cortijo,Right Center Midfield,Peru,0.016538767,Blocked,Peru,00:13:35.120,Shot
+7532,"[107.0, 37.0]",14,Alberto Junior Rodríguez Valdelomar,Left Center Back,Peru,0.059586205,Wayward,Peru,00:14:11.080,Shot
+7532,"[113.0, 26.0]",19,Pione Sisto Ifolo Emirmija,Left Wing,Denmark,0.055096734,Blocked,Denmark,00:19:37.360,Shot
+7532,"[88.0, 36.0]",26,Thomas Delaney,Left Center Midfield,Denmark,0.037667256,Off T,Denmark,00:26:22.293,Shot
+7532,"[108.0, 51.0]",28,Jefferson Agustín Farfán Guadalupe,Center Forward,Peru,0.10626122,Blocked,Peru,00:28:21.733,Shot
+7532,"[100.0, 52.0]",38,Christian Dannemann Eriksen,Center Attacking Midfield,Denmark,0.07605611,Blocked,Denmark,00:38:46.520,Shot
+7532,"[94.0, 43.0]",38,Lasse Schöne,Right Center Midfield,Denmark,0.024234127,Saved,Denmark,00:38:48.573,Shot
+7532,"[102.0, 24.0]",40,Thomas Delaney,Left Center Midfield,Denmark,0.032256115,Off T,Denmark,00:40:45.000,Shot
+7532,"[108.0, 40.0]",45,Christian Alberto Cueva Bravo,Center Attacking Midfield,Peru,0.7835,Off T,Peru,00:45:42.240,Shot
+7532,"[115.0, 45.0]",46,Yussuf Yurary Poulsen,Right Wing,Denmark,0.09912568,Off T,Denmark,00:46:59.120,Shot
+7532,"[110.0, 60.0]",49,Jefferson Agustín Farfán Guadalupe,Center Forward,Peru,0.0068373373,Blocked,Peru,00:04:55.640,Shot
+7532,"[90.0, 36.0]",50,Jens Stryger Larsen,Left Back,Denmark,0.019323658,Off T,Denmark,00:05:28.453,Shot
+7532,"[103.0, 59.0]",52,Christian Dannemann Eriksen,Center Attacking Midfield,Denmark,0.009715938,Off T,Denmark,00:07:54.053,Shot
+7532,"[114.0, 50.0]",56,Édison Michael Flores Peralta,Left Wing,Peru,0.077727586,Off T,Peru,00:11:02.440,Shot
+7532,"[108.0, 28.0]",58,Yussuf Yurary Poulsen,Right Wing,Denmark,0.24699534,Goal,Denmark,00:13:32.040,Shot
+7532,"[108.0, 29.0]",60,Édison Michael Flores Peralta,Left Wing,Peru,0.12293178,Saved,Peru,00:15:07.920,Shot
+7532,"[113.0, 41.0]",63,José Paolo Guerrero Gonzáles,Left Wing,Peru,0.17922288,Saved,Peru,00:18:37.240,Shot
+7532,"[113.0, 50.0]",68,Alberto Junior Rodríguez Valdelomar,Left Center Back,Peru,0.072114944,Off T,Peru,00:23:19.600,Shot
+7532,"[109.0, 59.0]",72,Luis Jan Piers Advíncula Castrillón,Right Back,Peru,0.010184116,Saved,Peru,00:27:06.080,Shot
+7532,"[112.0, 40.0]",78,José Paolo Guerrero Gonzáles,Left Wing,Peru,0.13312599,Off T,Peru,00:33:28.240,Shot
+7532,"[104.0, 49.0]",81,Nicolai Jørgensen,Center Forward,Denmark,0.11509085,Blocked,Denmark,00:36:45.720,Shot
+7532,"[108.0, 43.0]",83,Jefferson Agustín Farfán Guadalupe,Center Forward,Peru,0.1773644,Saved,Peru,00:38:20.200,Shot
+7532,"[105.0, 32.0]",85,Christian Dannemann Eriksen,Center Attacking Midfield,Denmark,0.40600583,Saved,Denmark,00:40:25.640,Shot
+7532,"[112.0, 41.0]",94,José Paolo Guerrero Gonzáles,Left Wing,Peru,0.11653745,Wayward,Peru,00:49:02.240,Shot
+7546,"[96.0, 43.0]",1,Édison Michael Flores Peralta,Left Midfield,Peru,0.04638079,Blocked,Peru,00:01:31.233,Shot
+7546,"[62.0, 36.0]",5,Víctor Yoshimar Yotún Flores,Left Defensive Midfield,Peru,0.002964359,Off T,Peru,00:05:46.740,Shot
+7546,"[114.0, 54.0]",10,Antoine Griezmann,Center Attacking Midfield,France,0.040895715,Off T,France,00:10:02.580,Shot
+7546,"[88.0, 54.0]",11,Paul Pogba,Left Center Midfield,France,0.009108837,Off T,France,00:11:06.580,Shot
+7546,"[115.0, 34.0]",13,Raphaël Varane,Right Center Back,France,0.10144759,Off T,France,00:13:44.500,Shot
+7546,"[102.0, 51.0]",15,Antoine Griezmann,Center Attacking Midfield,France,0.051455326,Saved,France,00:15:19.700,Shot
+7546,"[97.0, 27.0]",23,Édison Michael Flores Peralta,Left Midfield,Peru,0.027215322,Off T,Peru,00:23:24.713,Shot
+7546,"[110.0, 33.0]",30,José Paolo Guerrero Gonzáles,Center Forward,Peru,0.20325628,Saved,Peru,00:30:16.260,Shot
+7546,"[112.0, 38.0]",32,Kylian Mbappé Lottin,Right Wing,France,0.27977735,Saved,France,00:32:51.460,Shot
+7546,"[109.0, 29.0]",33,Olivier Giroud,Center Forward,France,0.09246414,Blocked,France,00:33:36.340,Shot
+7546,"[119.0, 41.0]",33,Kylian Mbappé Lottin,Right Wing,France,0.9293175,Goal,France,00:33:37.993,Shot
+7546,"[109.0, 27.0]",42,Lucas Hernández Pi,Left Back,France,0.053871572,Saved,France,00:42:22.780,Shot
+7546,"[112.0, 29.0]",42,Lucas Hernández Pi,Left Back,France,0.115647,Off T,France,00:42:24.860,Shot
+7546,"[93.0, 39.0]",49,Pedro Jesús Aquino Sánchez,Right Defensive Midfield,Peru,0.032040957,Post,Peru,00:04:53.200,Shot
+7546,"[101.0, 30.0]",57,Christian Alberto Cueva Bravo,Left Wing,Peru,0.049853675,Blocked,Peru,00:12:30.480,Shot
+7546,"[94.0, 37.0]",60,André Martín Carrillo Díaz,Right Wing,Peru,0.03232524,Off T,Peru,00:15:41.240,Shot
+7546,"[105.0, 40.0]",66,José Paolo Guerrero Gonzáles,Center Forward,Peru,0.10677668,Wayward,Peru,00:21:31.640,Shot
+7546,"[98.0, 61.0]",67,Luis Jan Piers Advíncula Castrillón,Right Back,Peru,0.009771249,Off T,Peru,00:22:04.680,Shot
+7546,"[116.0, 29.0]",73,Jefferson Agustín Farfán Guadalupe,Center Attacking Midfield,Peru,0.046855085,Off T,Peru,00:28:22.440,Shot
+7546,"[105.0, 44.0]",81,Ousmane Dembélé,Right Wing,France,0.07033722,Off T,France,00:36:07.200,Shot
+7546,"[87.0, 43.0]",87,José Paolo Guerrero Gonzáles,Center Forward,Peru,0.02880108,Saved,Peru,00:42:01.720,Shot
+7546,"[97.0, 40.0]",91,Blaise Matuidi,Left Wing,France,0.039226346,Off T,France,00:46:26.160,Shot
+7546,"[107.0, 30.0]",92,José Paolo Guerrero Gonzáles,Center Forward,Peru,0.038980518,Off T,Peru,00:47:35.600,Shot
+7546,"[106.0, 32.0]",93,Olivier Giroud,Center Forward,France,0.07983788,Blocked,France,00:48:46.520,Shot
+7547,"[114.0, 38.0]",1,Thomas Delaney,Left Defensive Midfield,Denmark,0.19775419,Off T,Denmark,00:01:41.200,Shot
+7547,"[101.0, 53.0]",4,Tom Rogić,Secondary Striker,Australia,0.024034739,Blocked,Australia,00:04:12.200,Shot
+7547,"[113.0, 42.0]",4,Mathew Leckie,Right Wing,Australia,0.13728113,Off T,Australia,00:04:48.200,Shot
+7547,"[104.0, 39.0]",6,Christian Dannemann Eriksen,Center Attacking Midfield,Denmark,0.1393918,Goal,Denmark,00:06:07.640,Shot
+7547,"[88.0, 38.0]",21,Pione Sisto Ifolo Emirmija,Left Wing,Denmark,0.026401442,Saved,Denmark,00:21:22.840,Shot
+7547,"[93.0, 33.0]",22,Tom Rogić,Secondary Striker,Australia,0.029915893,Off T,Australia,00:22:26.880,Shot
+7547,"[113.0, 42.0]",23,Nicolai Jørgensen,Center Forward,Denmark,0.22533564,Off T,Denmark,00:23:37.160,Shot
+7547,"[111.0, 44.0]",29,Robbie Kruse,Left Wing,Australia,0.09697945,Blocked,Australia,00:29:54.160,Shot
+7547,"[92.0, 40.0]",29,Aaron Mooy,Right Center Midfield,Australia,0.02370917,Blocked,Australia,00:29:56.480,Shot
+7547,"[110.0, 41.0]",35,Mathew Leckie,Right Wing,Australia,0.06497701,Blocked,Australia,00:35:15.400,Shot
+7547,"[109.0, 41.0]",37,Mile Jedinak,Left Center Midfield,Australia,0.7835,Goal,Australia,00:37:56.040,Shot
+7547,"[108.0, 32.0]",42,Jens Stryger Larsen,Left Back,Denmark,0.085312515,Saved,Denmark,00:42:05.840,Shot
+7547,"[107.0, 40.0]",50,Pione Sisto Ifolo Emirmija,Left Wing,Denmark,0.09409239,Blocked,Denmark,00:05:46.400,Shot
+7547,"[94.0, 26.0]",70,Aaron Mooy,Right Center Midfield,Australia,0.021356815,Off T,Australia,00:25:16.400,Shot
+7547,"[94.0, 47.0]",71,Tom Rogić,Secondary Striker,Australia,0.03067614,Saved,Australia,00:26:27.760,Shot
+7547,"[96.0, 27.0]",71,Pione Sisto Ifolo Emirmija,Left Wing,Denmark,0.024973137,Off T,Denmark,00:26:49.640,Shot
+7547,"[104.0, 59.0]",75,Mathew Leckie,Right Wing,Australia,0.008275843,Saved,Australia,00:30:11.480,Shot
+7547,"[108.0, 42.0]",78,Mathew Leckie,Right Wing,Australia,0.10484656,Wayward,Australia,00:33:46.760,Shot
+7547,"[106.0, 34.0]",82,Andreas Evald Cornelius,Center Forward,Denmark,0.14601058,Saved,Denmark,00:37:14.800,Shot
+7547,"[114.0, 24.0]",87,Daniel Arzani,Left Wing,Australia,0.011980171,Saved,Australia,00:42:44.640,Shot
+7547,"[107.0, 37.0]",87,Mathew Leckie,Right Wing,Australia,0.07465897,Saved,Australia,00:42:53.240,Shot
+7547,"[97.0, 47.0]",89,Christian Dannemann Eriksen,Center Attacking Midfield,Denmark,0.033656128,Off T,Denmark,00:44:45.680,Shot
+7547,"[105.0, 29.0]",91,Martin Braithwaite Christensen,Right Wing,Denmark,0.041516952,Saved,Denmark,00:46:52.960,Shot
+7562,"[97.0, 53.0]",4,Mile Jedinak,Right Center Midfield,Australia,0.027759347,Off T,Australia,00:04:17.267,Shot
+7562,"[95.0, 46.0]",11,Tom Rogić,Center Attacking Midfield,Australia,0.037056766,Blocked,Australia,00:11:27.587,Shot
+7562,"[104.0, 53.0]",17,André Martín Carrillo Díaz,Right Midfield,Peru,0.03970575,Goal,Peru,00:17:14.547,Shot
+7562,"[112.0, 42.0]",20,Mathew Leckie,Right Midfield,Australia,0.118186094,Wayward,Australia,00:20:00.707,Shot
+7562,"[109.0, 37.0]",24,José Paolo Guerrero Gonzáles,Center Forward,Peru,0.13641801,Saved,Peru,00:24:07.787,Shot
+7562,"[105.0, 40.0]",26,Tom Rogić,Center Attacking Midfield,Australia,0.24210833,Saved,Australia,00:26:49.067,Shot
+7562,"[83.0, 33.0]",32,Víctor Yoshimar Yotún Flores,Left Defensive Midfield,Peru,0.0056918976,Off T,Peru,00:32:51.307,Shot
+7562,"[116.0, 43.0]",34,Trent Sainsbury,Right Center Back,Australia,0.15594603,Off T,Australia,00:34:44.507,Shot
+7562,"[115.0, 34.0]",39,Trent Sainsbury,Right Center Back,Australia,0.11028426,Off T,Australia,00:39:41.667,Shot
+7562,"[111.0, 36.0]",49,José Paolo Guerrero Gonzáles,Center Forward,Peru,0.15455943,Goal,Peru,00:04:09.867,Shot
+7562,"[113.0, 50.0]",51,Mile Jedinak,Right Center Midfield,Australia,0.07718142,Saved,Australia,00:06:24.627,Shot
+7562,"[96.0, 61.0]",54,Aaron Mooy,Left Center Midfield,Australia,0.009029534,Blocked,Australia,00:09:47.627,Shot
+7562,"[113.0, 52.0]",55,Trent Sainsbury,Right Center Back,Australia,0.04171371,Wayward,Australia,00:10:27.067,Shot
+7562,"[116.0, 39.0]",58,Mile Jedinak,Right Center Midfield,Australia,0.28015888,Wayward,Australia,00:13:02.707,Shot
+7562,"[111.0, 51.0]",58,Tim Cahill,Center Forward,Australia,0.058087178,Wayward,Australia,00:13:55.467,Shot
+7562,"[107.0, 32.0]",58,Aziz Eraltay Behich,Left Back,Australia,0.11772655,Off T,Australia,00:13:57.547,Shot
+7562,"[110.0, 35.0]",59,Tim Cahill,Center Forward,Australia,0.18379883,Blocked,Australia,00:14:24.387,Shot
+7562,"[112.0, 50.0]",65,Mathew Leckie,Right Midfield,Australia,0.073874444,Blocked,Australia,00:20:30.307,Shot
+7562,"[96.0, 31.0]",66,Daniel Arzani,Left Midfield,Peru,0.059451457,Off T,Australia,00:21:34.347,Shot
+7562,"[93.0, 36.0]",82,Mile Jedinak,Right Center Midfield,Australia,0.062956445,Off T,Australia,00:37:54.947,Shot
+7563,"[106.0, 28.0]",14,Olivier Giroud,Center Forward,France,0.08902341,Saved,France,00:14:21.920,Shot
+7563,"[112.0, 42.0]",15,Raphaël Varane,Right Center Back,France,0.07222413,Off T,France,00:15:31.720,Shot
+7563,"[99.0, 60.0]",32,Ousmane Dembélé,Right Wing,France,0.009843999,Off T,France,00:32:48.227,Shot
+7563,"[101.0, 60.0]",38,Antoine Griezmann,Center Attacking Midfield,France,0.010871868,Saved,France,00:38:52.507,Shot
+7563,"[96.0, 59.0]",44,Ousmane Dembélé,Right Wing,France,0.009946421,Off T,France,00:44:46.507,Shot
+7563,"[95.0, 51.0]",46,Christian Dannemann Eriksen,Right Center Midfield,France,0.019755723,Blocked,Denmark,00:46:15.027,Shot
+7563,"[92.0, 53.0]",50,Antoine Griezmann,Center Attacking Midfield,France,0.021117477,Saved,France,00:05:39.960,Shot
+7563,"[81.0, 44.0]",53,Christian Dannemann Eriksen,Right Center Midfield,Denmark,0.008512876,Saved,Denmark,00:08:37.427,Shot
+7563,"[92.0, 40.0]",54,Thomas Lemar,Left Wing,France,0.026648624,Blocked,France,00:09:27.307,Shot
+7563,"[101.0, 37.0]",58,Christian Dannemann Eriksen,Right Center Midfield,Denmark,0.07888575,Off T,Denmark,00:13:16.707,Shot
+7563,"[91.0, 33.0]",62,Viktor Fischer,Left Midfield,Denmark,0.026548343,Blocked,Denmark,00:17:23.227,Shot
+7563,"[104.0, 66.0]",65,Henrik Dalsgaard,Right Back,Denmark,0.0052553928,Blocked,Denmark,00:20:58.667,Shot
+7563,"[101.0, 19.0]",69,Nabil Fekir,Center Attacking Midfield,France,0.009661348,Off T,France,00:24:29.827,Shot
+7563,"[108.0, 33.0]",73,Olivier Giroud,Center Forward,France,0.09807604,Off T,France,00:28:33.280,Shot
+7563,"[102.0, 54.0]",78,Olivier Giroud,Center Forward,France,0.03951678,Off T,France,00:33:28.160,Shot
+7563,"[96.0, 49.0]",81,Nabil Fekir,Center Attacking Midfield,France,0.031210398,Saved,France,00:36:52.840,Shot

@@ -37,14 +37,34 @@ def data_cleansing(match_id):
     df = df[df['shot_statsbomb_xg'].notnull()]
     
     # Adding the identifier for the game
-    df['match_id'] = match_id
+    df['match_id_script'] = match_id
+
+    # Keeping only needed columns
+    columns = ['match_id', 'location', 'minute', 'player', 'position',
+                 'possession_team', 'shot_statsbomb_xg', 'shot_outcome', 'team', 'timestamp', 'type']
+
+    df = df[columns]
 
     return df
 
+# create an empty dataframe to store the data from multiple games
+matches_df = pd.DataFrame()
 
-print(data_cleansing(7532).columns)
+# Looping applying the function and appending the output in the final dataframe
+for matches in matches_list:
+
+    # Applying the function
+    match_data = data_cleansing(matches)
+
+    # Concatenate into a single dataframe
+    matches_df = pd.concat([matches_df, match_data], ignore_index=True)
+    
+
+# Save the dataframe into a  csv
+matches_df.to_csv('WC_Group_C_2018.csv', index=False)
 
 # To-do Next: Automate extraction for other matches using dictionary and concatenate all into a consolidated dataset
+
 # Only then start coding in R
 #       - Probabilities of each team winning
 #       - xG Flowchart + Probability visualization
