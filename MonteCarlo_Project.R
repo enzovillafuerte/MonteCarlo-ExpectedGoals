@@ -95,17 +95,90 @@ simulate_game <- function(match_id) {
   ))
 }
 
+# match_id of the game we are interested
 a = 7532
 
 result <- simulate_game(a)
-print(result)
+print(result[[1]] > result[[2]])
+print(result$home_team)
 # Function simulating a match
 
 
 #############################################
-# ITERATING K TIMES
+# ITERATING K TIMES - MONTECARLO EXPECTED GOALS
 #############################################
 
 k_simulations <- function(match_id, k=10000){
   
+  # Getting the team names section -- Keeping comments out for readability
+  game_data <- data[data$match_id == match_id,]
+  teams <- unique(game_data$team)
+  home_team <- teams[1] # i.e. "Peru"
+  away_team <- teams[2] # i.e. "Denmark"
+  
+  # H2H (Head to Head) Ocurrences
+  home <- 0
+  draw <- 0
+  away <- 0
+  
+  # Over 2.5 Goals Ocurrences
+  o_2_5 <- 0
+  u_2_5 <- 0
+  
+  # Creating the for loop to iterate the previous function k times and store results
+  for (i in 1:k) {
+    
+    # Apply the function
+    simulation <- simulate_game(a)
+    
+    # If statements to populate the H2H and O2.5 variables based on simulation
+    if (simulation[[1]] > simulation[[2]]) {
+      home <- home + 1
+      if (simulation[[1]] + simulation[[2]] > 2.5) {
+        o_2_5 <- o_2_5 + 1
+      }
+      else {
+        u_2_5 <- u_2_5 + 1
+      }
+    }
+    
+    else if (simulation[[1]] < simulation[[2]]) {
+      away <- away + 1
+      if (simulation[[1]] + simulation[[2]] > 2.5) {
+        o_2_5 <- o_2_5 + 1
+      }
+      else {
+        u_2_5 <- u_2_5 + 1
+      }
+    }
+    
+    else {
+      draw <- draw + 1
+      if (simulation[[1]] + simulation[[2]] > 2.5) {
+        o_2_5 <- o_2_5 + 1
+      }
+      else {
+        u_2_5 <- u_2_5 + 1
+      }
+    }
+  }
+  
+  # Calculate probabilities for each outcome
+  # H2H
+  home_prob <- home / k
+  draw_prob <- draw / k
+  away_prob <- away / k
+  
+  # O/U
+  o2_5_prob <- o_2_5 / k
+  u2_5_prob <- u_2_5 / k
+    
+  
+  return(setNames(
+    list(home_prob, draw_prob, away_prob, o2_5_prob, u2_5_prob),
+    c(home_team, 'Draw', away_team, '+2.5', '-2.5')
+  ))
 }
+
+final_montecarlo <- k_simulations(a)
+print(final_montecarlo)
