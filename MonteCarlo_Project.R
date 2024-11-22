@@ -16,7 +16,9 @@
 
 # Import libraries
 library(readr)
-
+library(ggplot2)
+library(RColorBrewer)
+library(viridis)
 
 
 # Data is being extracted using Statsbomb's Python API
@@ -96,7 +98,9 @@ simulate_game <- function(match_id) {
 }
 
 # match_id of the game we are interested
-a = 7532
+a = 7532 # Peru vs Denmark
+# a = 7546 # Peru vs France
+# a = 7562 # Peru vs Australia
 
 result <- simulate_game(a)
 print(result[[1]] > result[[2]])
@@ -172,7 +176,6 @@ k_simulations <- function(match_id, k=10000){
   # O/U
   o2_5_prob <- o_2_5 / k
   u2_5_prob <- u_2_5 / k
-    
   
   return(setNames(
     list(home_prob, draw_prob, away_prob, o2_5_prob, u2_5_prob),
@@ -182,3 +185,58 @@ k_simulations <- function(match_id, k=10000){
 
 final_montecarlo <- k_simulations(a)
 print(final_montecarlo)
+
+
+#############################################
+# GRAPH SECTION FOR REPORT
+#############################################
+# color pallettes for brewer: https://r-graph-gallery.com/38-rcolorbrewers-palettes.html
+
+# Setting output directory to save the plots for report
+output_dir <- 'plots'
+
+# Extracting names and probabilities
+team_names <- names(final_montecarlo)
+probabilities <- unlist(final_montecarlo)  # Converting into a vector
+
+# Head-to-Head -- Graph 1
+df_h2h <- data.frame(
+  Outcome = team_names[1:3],   # Only getting Home,Draw, and Away
+  Probability = probabilities[1:3]
+)
+
+h2h_plot <- ggplot(df_h2h, aes(x = Outcome, y = Probability, fill = Outcome)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Head-to-Head Probabilities") +
+  xlab("Outcome") +
+  ylab("Probability") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_fill_brewer(palette = "PuBu") + 
+  theme_minimal()
+
+# Saving the plot
+ggsave(filename= file.path(output_dir, 'h2h_probabilities.png'),
+       plot = h2h_plot, width = 6, height = 4, dpi =300)
+
+# Over/Under Goals -- Graph 2
+df_ou <- data.frame(
+  Outcome = team_names[4:5],
+  Probability = probabilities[4:5]
+)
+
+ou_plot <- ggplot(df_ou, aes(x = Outcome, y = Probability, fill = Outcome)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Over/Under 2.5 Goals Probabilities") +
+  xlab("Outcome") +
+  ylab("Probability (%)") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_fill_brewer(palette = "PuBu") + # PuBu
+  theme_minimal()
+
+# Saving the plot
+ggsave(filename= file.path(output_dir, 'o_u_probabilities.png'),
+       plot = ou_plot, width = 4, height = 4, dpi = 300)
+
+#############################################
+# EXPECTED POINTS SECTION
+#############################################
