@@ -288,10 +288,32 @@ montecarlo_simulation <- function(match_id, k = 10000, output_dir = 'plots'){
   
   xPTS_output <- calculate_xpts(final_montecarlo)
   
-  return(list(Probabilities = final_montecarlo, ExpectedPoints = xPTS_output))
+  # Combining the results into a single row for dataframe export into csv
+  result <- data.frame(
+    MatchID = match_id,
+    HomeTeam = names(final_montecarlo)[1],
+    AwayTeam = names(final_montecarlo)[3],
+    HomeWinProb = final_montecarlo[[1]],
+    DrawProb = final_montecarlo[[2]],
+    AwayWinProb = final_montecarlo[[3]],
+    Over2_5Prob = final_montecarlo[[4]],
+    Under2_5Prob = final_montecarlo[[5]],
+    Home_xPTS = xPTS_output[[1]],
+    Away_xPTS = xPTS_output[[2]]
+  )
+  
+  
+  # return(list(Probabilities = final_montecarlo, ExpectedPoints = xPTS_output)) # Uncomment to keep output within R only
+  return(result)
 }
  
 # MAIN FUNCTION END
 #######################################################################################################################################################
 
-final_output_results <- lapply(games_id, montecarlo_simulation)
+# Running the final simulation function through all the games in the list
+# final_output_results <- lapply(games_id, montecarlo_simulation) # Uncomment to keep output within R only
+# Store into dataframe and export as csv 
+final_output_results <- do.call(rbind, lapply(games_id, montecarlo_simulation))
+
+write.csv(final_output_results, "output_analysis/final_output_results.csv", row.names = FALSE)
+
