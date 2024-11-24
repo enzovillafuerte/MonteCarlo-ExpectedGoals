@@ -30,9 +30,9 @@ data <- read.csv('WC_Group_C_2018.csv')
 # Get a list of the column names
 colnames(data)
 
-#############################################
+##########################################################################################
 # SIMULATING ONE GAME SECTION
-#############################################
+##########################################################################################
 
 # Filtering to keep only the data for the game I need: Peru vs Denmark
 # match_id = 7532
@@ -108,9 +108,9 @@ print(result$home_team)
 # Function simulating a match
 
 
-#############################################
+##########################################################################################
 # ITERATING K TIMES - MONTECARLO EXPECTED GOALS
-#############################################
+##########################################################################################
 
 k_simulations <- function(match_id, k=10000){
   
@@ -187,9 +187,9 @@ final_montecarlo <- k_simulations(a)
 print(final_montecarlo)
 
 
-#############################################
+##########################################################################################
 # GRAPH SECTION FOR REPORT
-#############################################
+##########################################################################################
 # color pallettes for brewer: https://r-graph-gallery.com/38-rcolorbrewers-palettes.html
 
 # Setting output directory to save the plots for report
@@ -237,6 +237,47 @@ ou_plot <- ggplot(df_ou, aes(x = Outcome, y = Probability, fill = Outcome)) +
 ggsave(filename= file.path(output_dir, 'o_u_probabilities.png'),
        plot = ou_plot, width = 4, height = 4, dpi = 300)
 
-#############################################
+##########################################################################################
 # EXPECTED POINTS SECTION
-#############################################
+##########################################################################################
+# Using the paper Monte Carlo Simulations and Applications in Sports as Reference
+# Expected Points Formula:
+# xPts = 3 * P(win) + 1 * P(tie) + 0 * P(loss)
+
+
+calculate_xpts <- function(montecarlo_output){
+  
+  final_montecarlo <- montecarlo_output
+  
+  # Accessing the data from the input
+  # Extracting names and probability
+  team_names <- names(final_montecarlo)
+  probabilities <- unlist(final_montecarlo)  # Converting into a vector
+  
+  # Only keeping variables of interest for the xPTS formula (Home, Draw, Away)
+  outcomes_of_interest <- team_names[1:3]
+    
+  # Assignings Probabilities
+  home_prob <-probabilities[1]
+  draw_prob <- probabilities[2]
+  away_prob <- probabilities[3]
+  
+  # Expected Points Formula - Vould great a function here but it would make it messier imo
+  home_xPTS <- 3 * home_prob + 1 * draw_prob + 0 * away_prob
+  away_xPTS <- 3 * away_prob + 1 * draw_prob + 0 * home_prob
+    
+  # Removing the inherited names from the unlist of probabilities
+  home_xPTS <- unname(home_xPTS)
+  away_xPTS <- unname(away_xPTS)
+  
+  # return(c(home_xPTS, away_xPTS))
+  return(setNames(
+    list(home_xPTS, away_xPTS),
+    c(team_names[1], team_names[3])
+  ))
+  
+}
+
+xPTS_output <- calculate_xpts(final_montecarlo)
+
+
