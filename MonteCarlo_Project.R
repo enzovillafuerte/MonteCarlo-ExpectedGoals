@@ -224,7 +224,7 @@ montecarlo_simulation <- function(match_id, k = 10000, output_dir = 'plots'){
     theme_minimal()
   
   # Saving the plot
-  ggsave(filename= file.path(output_dir, 'h2h_probabilities.png'),
+  ggsave(filename= file.path(output_dir, sprintf('h2h_probabilities_%s.png', match_id)),
          plot = h2h_plot, width = 6, height = 4, dpi =300)
   
   # Over/Under Goals -- Graph 2
@@ -243,7 +243,7 @@ montecarlo_simulation <- function(match_id, k = 10000, output_dir = 'plots'){
     theme_minimal()
   
   # Saving the plot
-  ggsave(filename= file.path(output_dir, 'o_u_probabilities.png'),
+  ggsave(filename= file.path(output_dir, sprintf('o_u_probabilities_%s.png', match_id)),
          plot = ou_plot, width = 4, height = 4, dpi = 300)
   
   ##########################################################################################
